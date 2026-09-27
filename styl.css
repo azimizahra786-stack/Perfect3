@@ -1,0 +1,1013 @@
+:root {
+  /* 🎨 رنگ‌ها */
+  --color-primary: #0dacc7;
+  --color-primary-dark: #1992a7;
+  --color-secondary: #ffffff;
+  --color-text: #333;
+  --color-bg: #f7f7f7;
+  --color-footer-bg: #1a1a1a;
+  --color-footer-text: #b3b3b3;
+  --color-accent-light: #e0f7fa;
+  --color-border: #eef2f3;
+  --color-border-light: #0dabc725;
+
+  /* 🌐 رنگ شبکه‌های اجتماعی */
+  --facebook: #0dacc7;
+  --instagram: #0dacc7;
+  --telegram: #0dacc7;
+  --whatsapp: #0dacc7;
+
+  /* 🔠 فونت‌ها و سایزها */
+  --font-size-base: 15px;
+  --font-size-heading: 28px;
+  --font-size-subheading: 20px;
+  --font-size-small: 14px;
+  --font-size-large: 36px;
+
+  /* 🌟 سایه‌ها */
+  --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 8px 25px rgba(13, 172, 199, 0.25);
+  --shadow-header: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* تنظیمات اولیه */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* --- هیدر و نوبار --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-header);
+  width: 100%;
+}
+header h2 {
+  color: var(--color-primary);
+}
+
+/* سرچ */
+#search input {
+  background: #eceded;
+  border: 1px solid var(--color-primary-dark);
+}
+#search svg {
+  fill: var(--color-primary-dark);
+}
+
+/* آیکن‌های شبکه‌های اجتماعی */
+#icon-header #facebook svg {
+  fill: var(--facebook);
+}
+#icon-header #instagram svg {
+  fill: var(--instagram);
+}
+#icon-header #telegram svg {
+  fill: var(--telegram);
+}
+#icon-header #whatsapp svg {
+  fill: var(--whatsapp);
+}
+
+#register-ID {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+#register-ID:hover {
+  background-color: #e3e4e4;
+  color: #000;
+}
+
+/* درباره ما */
+.container-about {
+  background: linear-gradient(
+    135deg,
+    var(--color-secondary) 5%,
+    #f8fdff 15%,
+    #dff8ff 35%,
+    #7ddff7 55%,
+    #46c8ee 75%,
+    #8b9cff 100%
+  );
+  box-shadow: var(--shadow-light);
+}
+.btn-more {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+.btn-more:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* دوره‌ها */
+.course {
+  background: var(--color-secondary);
+  color: var(--color-text);
+  border-top: 4px solid var(--color-primary);
+  box-shadow: var(--shadow-light);
+}
+.course:hover {
+  box-shadow: var(--shadow-medium);
+}
+.course h2 {
+  color: var(--color-primary);
+}
+
+#special {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  color: var(--color-secondary);
+}
+#special p {
+  color: var(--color-accent-light);
+}
+
+/* کلاس‌ها */
+.class-card {
+  border: 1px solid var(--color-border-light);
+}
+.class-content h2 {
+  color: var(--color-primary);
+}
+
+/* ارتباط با ما */
+#contact {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  color: var(--color-accent-light);
+}
+#contact h2 {
+  color: var(--color-secondary);
+}
+
+/* ثبت‌نام */
+.btn-register {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  box-shadow: var(--shadow-medium);
+}
+.btn-register:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* فوتر */
+.footer-modern {
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+}
+.footer-col h3::after {
+  background-color: var(--color-primary);
+}
+.footer-col ul li a:hover {
+  color: var(--color-primary);
+}
+/* تنظیمات پایه */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* --- استایل‌های هدر و ناوبری --- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  height: 70px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  margin-left: -40px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+header .logo-link img {
+  height: 120px;
+  width: auto;
+}
+
+header h2 {
+  color: #0dacc7;
+  margin: 0;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+#search input {
+  height: 35px;
+  width: 220px;
+  background: #eceded;
+  padding: 0 15px;
+  border-radius: 40px;
+  color: #000;
+  border: 1px solid #1992a7;
+  outline: none;
+}
+#search svg {
+  fill: #1992a7;
+  position: relative;
+  left: -35px;
+  top: 7px;
+}
+/* بخش آیکن‌های شبکه‌های اجتماعی */
+#icon-header {
+  display: flex;
+  padding-top: 10px;
+  gap: 12px;
+}
+
+.head svg {
+  height: 24px;
+  width: 24px;
+  /* filter: brightness(5) saturate(10%) invert(50%); */
+  transition: transform 0.2s;
+}
+
+.head svg:hover {
+  transform: scale(1.1);
+}
+#icon-header #facebook svg {
+  fill: var(--facebook);
+}
+#icon-header #instagram svg {
+  fill: var(--instagram);
+  /* color:linear-gradient(45deg,#f58529,#feda77,#dd2a7b,#8134af,#515bd4); */
+}
+#icon-header #telegram svg {
+  fill: var(--facebook);
+}
+#icon-header #whatsapp svg {
+  fill: var(--whatsapp);
+}
+/* منوی ناوبری */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+/* فقط منوی ناوبری مخفی شود */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  width: 250px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* وقتی همبرگر فعال شد */
+#menu-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+
+/* آیکن همبرگر همیشه نمایش داده شود */
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 26px;
+  margin-left: 15px;
+  color: #1992a7;
+}
+
+/* لینک‌های منو */
+.nav-menu a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-menu a:hover {
+  background: #1992a7;
+  color: #fff;
+  border-radius: 4px;
+}
+
+nav a {
+  color: #000000;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background: #1992a7;
+  color: #fff;
+}
+
+/* دکمه ثبت نام درون منو */
+#register-ID {
+  background-color: #ffffff;
+  color: #0dacc7;
+  border-radius: 4px;
+  padding: 8px 15px;
+  margin-left: 10px;
+}
+
+#register-ID:hover {
+  background-color: #e3e4e4;
+  color: #000;
+}
+
+/* پنهان کردن آیکون همبرگری در دسکتاپ */
+.menu-icon,
+#menu-toggle {
+  display: none;
+}
+
+/* --- بخش خانه (Home) --- */
+#home {
+  padding-top: 300px;
+  height: 120vh;
+  width: 100%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(/Photo/background.png) center/cover no-repeat;
+  display: block;
+}
+
+.home-text {
+  max-width: 600px;
+  /* background: red; */
+  padding: 0 5%;
+  margin-top: -250px;
+  color: white;
+  line-height: 1;
+}
+
+#home p {
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#start,
+#start1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#start {
+  color: #0dacc7;
+  margin-bottom: ‌2px; /* این مقدار را به دلخواه خودتان کم یا زیاد کنید */
+}
+#start2 {
+  color: white;
+  padding-left: 65px;
+}
+#get-start {
+  display: block;
+  text-align: center;
+  padding: 2px;
+  color: rgb(240, 240, 240);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0dacc7;
+  border-radius: 15px;
+  text-decoration: none;
+  height: 38px;
+  width: 120px;
+  margin-left: 70px;
+}
+/* --- بخش درباره ما (About Us) --- */
+#about {
+  padding: 60px 0;
+  background-color: #ffffff;
+  height: auto;
+}
+
+.container-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    135deg,
+    #ffffff 5%,
+    #f8fdff 15%,
+    #dff8ff 35%,
+    #7ddff7 55%,
+    #46c8ee 75%,
+    #8b9cff 100%
+  );
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1100px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.img-about-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-about {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.info-about {
+  flex: 1;
+  padding: 40px;
+}
+
+.info-about h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 0;
+}
+
+.info-about p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn-more {
+  display: inline-block;
+  background-color: #0dacc7;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #1992a7;
+}
+
+/* مابقی استایل‌های عمومی شما */
+.container-course,
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* --- ریسپانسیو و بریک‌ پاینت‌ها (Media Queries) --- */
+
+/* تبلت‌ها و صفحات کوچک (زیر 992 پیکسل) */
+@media (max-width: 992px) {
+  .container-about {
+    flex-direction: column; /* تغییر چیدمان درباره ما به حالت عمودی */
+    width: 90%;
+  }
+  .info-about {
+    padding: 30px;
+    text-align: center;
+  }
+  #img-about {
+    max-height: 300px;
+  }
+}
+
+/* موبایل‌ها (زیر 768 پیکسل) */
+@media (max-width: 768px) {
+  .header-top {
+    padding: 10px 20px;
+  }
+
+  #search input {
+    width: 130px; /* کوچک‌تر شدن باکس سرچ */
+    font-size: 13px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+
+  /* فعال‌سازی منوی همبرگری برای موبایل */
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: #0dacc7;
+    order: 3;
+  }
+
+  .header-right {
+    display: none; /* پنهان کردن موقت آیکون‌ها در هدر موبایل جهت خلوت شدن */
+  }
+
+  /* تغییر رفتار منو به صورت کشویی در موبایل */
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #0dacc7;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #register-ID {
+    margin: 10px 0;
+    width: 80%;
+  }
+
+  /* نمایش مینو هنگام کلیک روی دکمه همبرگری */
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+}
+/* --- بخش دوره‌ها (Our Courses) --- */
+#courses {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+
+.container-course {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container-course h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #333;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.course {
+  background: #ffffff;
+  color: #333;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid #0dacc7;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.course:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(13, 172, 199, 0.25);
+}
+
+.course h2 {
+  color: #0dacc7;
+  font-size: 20px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.course p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+#special {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #0dacc7, #1992a7);
+  border-top: none;
+  color: #fff;
+}
+
+#special h1 {
+  color: #fff;
+}
+
+#special p {
+  color: #e0f7fa;
+}
+
+/* --- بخش کلاس‌های گروهی و انفرادی (جدید) --- */
+#classes-types {
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.classes-container {
+  display: flex;
+  gap: 30px;
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.class-card {
+  flex: 1;
+  background: #fdfdfd;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(99, 99, 99, 0.06);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eef2f3;
+  border: 1px solid #0dabc725;
+}
+
+#group {
+  background-color: rgba(218, 218, 218, 0.04);
+}
+
+#individual {
+  background-color: rgba(218, 218, 218, 0.04);
+}
+
+.class-img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.class-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.class-card:hover .class-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.class-content {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+.class-content h2 {
+  color: #0dacc7;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.class-content p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.class-content ul {
+  padding-left: 20px;
+}
+
+.class-content ul li {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* --- بخش ارتباط با ما --- */
+#contact {
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0dacc7, #1992a7);
+}
+
+.contact-info-wrapper {
+  color: hsl(192, 59%, 93%);
+  margin-top: 10px;
+}
+#contact h2 {
+  color: #fff;
+}
+/* --- بخش ثبت‌نام (Register Banner) --- */
+#register {
+  width: 100%;
+  min-height: 400px; /* ارتفاع بخش بنر */
+  background: url("/Photo/OIP.webp") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ایجاد یک لایه تیره روی عکس برای خوانایی عالی متن‌ها */
+.register-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* ۵۵ درصد تاریکی روی عکس */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* تنظیمات محتوای داخل بنر */
+.register-content {
+  text-align: center; /* وسط‌چین کردن متن‌ها */
+  color: #ffffff; /* رنگ متن سفید */
+  max-width: 600px;
+  width: 100%;
+}
+
+.register-content h2 {
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.register-content p {
+  font-size: 18px;
+  color: #e0f7fa;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* استایل دکمه ثبت‌نام */
+.btn-register {
+  display: inline-block;
+  background-color: #0dacc7;
+  color: #ffffff;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px; /* دکمه گوشه گرد مدرن */
+  box-shadow: 0 4px 15px rgba(13, 172, 199, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* افکت حرکت دکمه هنگام رفتن ماوس روی آن */
+.btn-register:hover {
+  background-color: #1992a7;
+  transform: translateY(-3px); /* کمی بالا آمدن دکمه */
+  box-shadow: 0 6px 20px rgba(13, 172, 199, 0.6);
+}
+
+/* --- تنظیمات ریسپانسیو برای موبایل --- */
+@media (max-width: 768px) {
+  #register {
+    min-height: 320px; /* کاهش ارتفاع بنر در موبایل */
+  }
+
+  .register-content h2 {
+    font-size: 28px; /* کوچک‌تر شدن فونت عنوان در موبایل */
+  }
+
+  .register-content p {
+    font-size: 15px; /* کوچک‌تر شدن توضیحات */
+    margin-bottom: 20px;
+  }
+
+  .btn-register {
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+}
+
+/* --- فوتر مدرن و حرفه‌ای --- */
+.footer-modern {
+  background-color: #1a1a1a;
+  color: #b3b3b3;
+  padding: 60px 0 20px 0;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-col h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120px;
+  height: 2px;
+  background-color: #0dacc7;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition:
+    color 0.3s,
+    padding-left 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #0dacc7;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #2d2d2d;
+}
+
+/* =======================================================
+   قوانین ریسپانسیو و بریک پوینت‌ها (Media Queries)
+   ======================================================= */
+
+/* تبلت‌ها و صفحات متوسط (زیر 992 پیکسل) */
+@media (max-width: 992px) {
+  .classes-container {
+    flex-direction: column; /* کارت‌های انفرادی و گروهی زیر هم می‌آیند */
+    gap: 25px;
+  }
+
+  .register-container {
+    flex-direction: column; /* فرم ثبت نام یک ستونه می‌شود */
+    text-align: center;
+    gap: 30px;
+  }
+}
+
+/* موبایل‌ها (زیر 768 پیکسل) */
+@media (max-width: 768px) {
+  .container-course,
+  .classes-container,
+  .register-container,
+  .footer-container {
+    width: 90%; /* حاشیه بیشتر برای راحتی در موبایل */
+  }
+
+  .course-list {
+    grid-template-columns: 1fr; /* لیست دوره‌ها کاملا */
+  }
+
+  #special {
+    grid-column: unset;
+  }
+
+  .footer-container {
+    flex-direction: column; /* ستون‌های فوتر زیر هم قرار می‌گیرند */
+    gap: 30px;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+}
+/* برای سایزهای بزرگتر (1440px و 1024px) */
+@media (max-width: 1440px) {
+  .header-top {
+    padding: 10px 3%;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-top {
+    flex-direction: row;
+  }
+  nav a {
+    padding: 12px 15px;
+  }
+}
+
+/* برای تبلت‌ها و موبایل‌ها */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: #0dacc7;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #0dacc7;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+}
+
+/* برای موبایل‌های خیلی کوچک (425px و 375px) */
+@media (max-width: 425px) {
+  header h2 {
+    font-size: 16px;
+  }
+  #search input {
+    width: 100px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  header h2 {
+    font-size: 14px;
+  }
+  .menu-icon {
+    font-size: 24px;
+  }
+  nav a {
+    font-size: 13px;
+  }
+}
